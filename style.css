@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
+    
 }
 
 html {
@@ -27,6 +28,7 @@ body {
     justify-content: center; /* Center content vertically and horizontally */
     background-color: #f4f4f4; /* Light background color */
     color: var(--dark);
+
 }
 
 h1 {
@@ -35,11 +37,12 @@ h1 {
 	font-size: 3rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem;
+   
 }
 
 .todoApp {
     width: 90%;
-    max-width: 600px; /* Limit maximum width of TodoList container */
+    max-width: 600px; /* Limit maximum width of TodoList container */   
 }
 
 .todo-addBox {
@@ -71,7 +74,6 @@ h1 {
 	font-weight: 700;
 	text-transform: uppercase;
 	background-color:#ff5b57;
-	box-shadow: var(--personal-glow);
 	border-radius: 1rem;
 	cursor: pointer;
 }
