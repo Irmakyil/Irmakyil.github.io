@@ -26,17 +26,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically and horizontally */
-    background-color: #f4f4f4; /* Light background color */
     color: var(--dark);
+    background: url(background.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 
 h1 {
 
-	color: var(--dark);
+	color: #fff;
 	font-size: 3rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem;
+    padding: 1.3rem 1.7rem;
+    background-color:#ff5b57;
+	border-radius: 1rem;
+	cursor: pointer;
    
 }
 
@@ -131,6 +137,3 @@ h1 {
     transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.filterButtons button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
-}
