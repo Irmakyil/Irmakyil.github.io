@@ -9,6 +9,7 @@ else {
     i = localStorage.getItem("i");
 }
 
+// Iterate through the stored items and display them
 for (let k = 1; k <= localStorage.getItem("i"); k++) {
     if (localStorage.getItem(`value${k}`) == null) {
         continue;
@@ -29,7 +30,6 @@ function add() {
                 <i class="fa-regular fa-floppy-disk save${i}" onclick="save(${i})" style="display: none;"></i>
             </div>`
 
-        console.log(i);
         localStorage.setItem(`value${i}`, `<div class="todolistExampleBox values${i}">
         <input type="checkbox" class="completedCheckbox" onchange="toggleCompletion(${i})">
         <input type="text" class="todolistTextExample value${i}" value="${value}" onclick="edit(${i})"></input>
@@ -42,7 +42,6 @@ function add() {
 }
 
 function remove(a) {
-    console.log(a);
     document.querySelector(`.values${a}`).outerHTML = "";
     localStorage.removeItem(`value${a}`);
     localStorage.setItem("i", i);
@@ -58,7 +57,6 @@ document.getElementById("todoText").addEventListener("keypress",
 )
 
 function edit(thisValue){
-    console.log(thisValue);
     document.querySelector(`.symbol${thisValue}`).style.display = "none";
     document.querySelector(`.save${thisValue}`).style.display = "flex";
 }
