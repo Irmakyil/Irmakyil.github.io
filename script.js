@@ -1,6 +1,7 @@
 var value;
 var i;
 
+// Check if the counter exists in local storage, if not initialize it to 0
 if (localStorage.getItem("i") == null) {
      i = 0;
 }
@@ -84,6 +85,7 @@ function toggleCompletion(index) {
     }
 }
 
+// Function to filter todo items based on completion status
 function filterTodos(filterType) {
     let todos = document.querySelectorAll(".todolistExampleBox");
     todos.forEach(todo => {
